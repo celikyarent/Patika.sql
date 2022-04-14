@@ -12,7 +12,7 @@
 					email VARCHAR(100)
 				)
                                         --***Sorgulayalım 
-										--SELECT * FROM employee ;
+				        --SELECT * FROM employee ;
 --SORU2 Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 insert into employee (name, email, birthday) values ('Ellene', 'ecattrall0@dot.gov', '2002-11-12');
 insert into employee (name, email, birthday) values ('Giacobo', 'ghessel1@homestead.com', '2016-05-11');
@@ -64,8 +64,9 @@ insert into employee (name, email, birthday) values ('Heinrik', 'hisacoff1a@addt
 insert into employee (name, email, birthday) values ('Horatio', 'hmassow1b@tumblr.com', '2007-01-06');
 insert into employee (name, email, birthday) values ('Calley', 'cbianco1c@list-manage.com', '2013-05-13');
 insert into employee (name, email, birthday) values ('Lindon', 'lrosgen1d@vimeo.com', '2013-10-11');
+
                                         --***Sorgulayalım 
-								--SELECT * FROM employee ;
+					--SELECT * FROM employee ;
 		
 --SORU3 Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 		 UPDATE employee
@@ -100,14 +101,14 @@ insert into employee (name, email, birthday) values ('Lindon', 'lrosgen1d@vimeo.
 		 birthday ='2015-10-11'
 		 WHERE id = 5 ;
                                 --***Sorgulayalım 
-								--SELECT * FROM employee ;
+				--SELECT * FROM employee ;
 --SORU4 Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 
-DELETE FROM employee
-WHERE id IN (1,2,3,4,5)
-RETURNING *;
+		DELETE FROM employee
+		WHERE id IN (1,2,3,4,5)
+		RETURNING *;
                                --***Sorgulayalım 
-								--SELECT * FROM employee ;
+			       --SELECT * FROM employee ;
 
 
 -- Kolay Gelsin.
